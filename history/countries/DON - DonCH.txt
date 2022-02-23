@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = cossack_host
 government_rank = 1
-primary_culture = russian
+primary_culture = muscovite
 religion = orthodox
 technology_group = eastern
 capital = 286
