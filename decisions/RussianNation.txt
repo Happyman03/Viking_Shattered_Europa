@@ -79,22 +79,8 @@ country_decisions = {
 					complete_mission = tr_invade_novgorod_mission
 					complete_mission = tr_subjugate_novgorod
 				}
-				every_owned_province = {
-					limit = {
-						OR = {
-							culture = ilmenian
-							culture = pskovian
-							culture = tverian
-							culture = pomor
-							culture = zalessian
-							culture = ryazanian
-						}
-					}
-					change_culture = russian
-				}
 			}
 			change_tag = RUS
-			change_primary_culture = russian
 			swap_non_generic_missions = yes
 			restore_country_name_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
