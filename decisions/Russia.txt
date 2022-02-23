@@ -249,7 +249,7 @@ country_decisions = {
 			is_at_war = no
 		}
 		effect = {
-            set_country_flag = kuban_established
+            set_country_flag = terek_established
             TCH = {
                 add_core = 2208
                 add_core = 2199
@@ -477,4 +477,3 @@ country_decisions = {
 		}
 	}
 }
-
