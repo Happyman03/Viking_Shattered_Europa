@@ -1,3 +1,15 @@
+# Cossack Hosts
+ASC	= "countries/AstrakhanCH.txt"
+DNI	= "countries/DnieperCH.txt"
+DON	= "countries/DonCH.txt"
+KCH	= "countries/KubanCH.txt"
+OCH	= "countries/OrenburgCH.txt"
+SCH	= "countries/SiberianCH.txt"
+SEM	= "countries/SemirechyeCH.txt"
+TCH	= "countries/TerekCH.txt"
+UCH	= "countries/UralCH.txt"
+ZCH	= "countries/ZaporizhiaCH.txt"
+
 # Special countries..
 REB = "countries/Rebels.txt"
 PIR = "countries/Pirates.txt"
