@@ -110,7 +110,7 @@ country_decisions = {
 				}
 				add_permanent_claim = RUS
 			}
-			crimea_region = {
+			ruthenia_region = {
 				limit = {
 					NOT = {
 						owned_by = ROOT
