@@ -3,9 +3,10 @@
 
 # Governance
 #=========================
-owner = CHR
-controller = CHR 
+owner = DNI
+controller = DNI 
 is_city = yes
+add_core = DNI
 add_core = CHR
 
 # Demographic
