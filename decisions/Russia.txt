@@ -197,6 +197,7 @@ country_decisions = {
 		}
 	}
     establish_don_host = {
+    		major = yes
 		potential = {
 			NOT = {
 				has_country_flag = don_established
