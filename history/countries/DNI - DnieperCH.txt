@@ -1,8 +1,18 @@
 government = republic
 add_government_reform = cossack_host
 government_rank = 1
-primary_culture = russian
+primary_culture = muscovite
 religion = orthodox
 technology_group = eastern
 historical_rival = NOV
 capital = 4542
+1444.1.1 = {
+	monarch = {
+		name = " Arturovych Tyshchenko"
+		dynasty = "Tyshchenko"
+		adm = 2
+		dip = 3
+		mil = 6
+    claim = 95
+	}
+}
