@@ -47,12 +47,14 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
+			OR = {
 				province_id = 295				# Moskva
 				province_id = 310				# Novgorod
 				province_id = 294				# Tver
 				province_id = 308				# Yaroslavl
 				province_id = 301				# Ryazan
 				province_id = 307				# Vladimir
+			}
 		}
 		allow = {
 			NOT = {
