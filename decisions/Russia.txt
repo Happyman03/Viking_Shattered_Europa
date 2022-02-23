@@ -97,105 +97,6 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	country_decisions = {
-	make_st_petersburg_capital = {
-		potential = {
-			culture_group = east_slavic
-			normal_or_historical_nations = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			owns = 33
-			NOT = {
-				capital = 33
-			}
-			NOT = {
-				has_country_flag = relocated_capital_st_petersburg
-			}
-		}
-		allow = {
-			is_core = 33
-			is_at_war = no
-			33 = {
-				is_state = yes
-			}
-		}
-		effect = {
-			33 = {
-				change_province_name = "St. Petersburg"
-				rename_capital = "St. Petersburg"
-				add_base_tax = 6
-				add_base_manpower = 3
-				change_culture = capital
-			}
-			set_country_flag = relocated_capital_st_petersburg
-			add_years_of_income = -1
-			add_prestige = 100
-			33 = {
-				move_capital_effect = yes
-			}
-			if = {
-				limit = {
-					33 = {
-						NOT = {
-							province_has_center_of_trade_of_level = 3
-						}
-					}
-				}
-				33 = {
-					add_center_of_trade_level = 1
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = {
-					years_of_income = 1.25
-				}
-			}
-		}
-	}
-	establish_russian_patriarchate = {
-		potential = {
-			NOT = {
-				has_mission = rus_patriarchate_mission
-			}
-			culture_group = east_slavic
-			normal_or_historical_nations = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			NOT = {
-				has_country_modifier = russian_patriarchate
-			}
-			religion_group = christian
-		}
-		allow = {
-			is_at_war = no
-			NOT = {
-				151 = {
-					owned_by = BYZ
-				}
-			}
-			prestige = 2
-			NOT = {
-				innovativeness_ideas = 3
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "russian_patriarchate"
-				duration = -1
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
     establish_don_host = {
     		major = yes
 		potential = {
@@ -239,5 +140,341 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	establish_kuban_host = {
+    		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = kuban_established
+			}
+			culture_group = east_slavic
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			religion_group = christian
+		}
+		allow = {
+            owns_core_province = 287
+            owns_core_province = 2195
+            owns_core_province = 463
+            owns_core_province = 2416
+            owns_core_province = 2414
+            owns_core_province = 2197
+			owns_core_province = 2201
+			is_at_war = no
+		}
+		effect = {
+            set_country_flag = kuban_established
+            KCH = {
+                add_core = 287
+                add_core = 2195
+                add_core = 463
+                add_core = 2416
+                add_core = 2414
+                add_core = 2197
+				add_core = 2201
+            }
+	    release = KCH
+            create_subject = {
+                subject_type = cossack_vassal
+                subject = KCH
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	establish_astrakhan_host = {
+    		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = astrakhan_established
+			}
+			culture_group = east_slavic
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			religion_group = christian
+		}
+		allow = {
+            owns_core_province = 464
+            owns_core_province = 2417
+            owns_core_province = 468
+            owns_core_province = 466
+            owns_core_province = 2418
+			is_at_war = no
+		}
+		effect = {
+            set_country_flag = astrakhan_established
+            ASC = {
+                add_core = 464
+                add_core = 2417
+                add_core = 468
+                add_core = 466
+                add_core = 2418
+            }
+	    release = ASC
+            create_subject = {
+                subject_type = cossack_vassal
+                subject = ASC
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	establish_terek_host = {
+    		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = terek_established
+			}
+			culture_group = east_slavic
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			religion_group = christian
+		}
+		allow = {
+            owns_core_province = 2208
+            owns_core_province = 2199
+            owns_core_province = 2198
+            owns_core_province = 4306
+            owns_core_province = 425
+			is_at_war = no
+		}
+		effect = {
+            set_country_flag = kuban_established
+            TCH = {
+                add_core = 2208
+                add_core = 2199
+                add_core = 2198
+                add_core = 4306
+                add_core = 425
+            }
+	    release = TCH
+            create_subject = {
+                subject_type = cossack_vassal
+                subject = TCH
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	establish_zaporizhia_host = {
+    		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = zaporizhia_established
+			}
+			culture_group = east_slavic
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			religion_group = christian
+		}
+		allow = {
+            owns_core_province = 282
+            owns_core_province = 2406
+            owns_core_province = 283
+            owns_core_province = 2411
+            owns_core_province = 291
+			is_at_war = no
+		}
+		effect = {
+            set_country_flag = zaporizhia_established
+            ZCH = {
+                add_core = 282
+                add_core = 2406
+                add_core = 283
+                add_core = 2411
+                add_core = 291
+            }
+	    release = ZCH
+            create_subject = {
+                subject_type = cossack_vassal
+                subject = ZCH
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	establish_ural_host = {
+    		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = ural_established
+			}
+			culture_group = east_slavic
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			religion_group = christian
+		}
+		allow = {
+            owns_core_province = 469
+            owns_core_province = 2367
+            owns_core_province = 2365
+            owns_core_province = 474
+            owns_core_province = 2366
+            owns_core_province = 470
+			owns_core_province = 465
+			is_at_war = no
+		}
+		effect = {
+            set_country_flag ural_established
+            UCH = {
+                add_core = 469
+                add_core = 2367
+                add_core = 2365
+                add_core = 474
+                add_core = 2366
+                add_core = 470
+				add_core = 465
+            }
+	    release = UCH
+            create_subject = {
+                subject_type = cossack_vassal
+                subject = UCH
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	establish_orenburg_host = {
+    		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = orenburg_established
+			}
+			culture_group = east_slavic
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			religion_group = christian
+		}
+		allow = {
+            owns_core_province = 2420
+            owns_core_province = 1965
+            owns_core_province = 475
+            owns_core_province = 2444
+            owns_core_province = 1966
+			is_at_war = no
+		}
+		effect = {
+            set_country_flag = orenburg_established
+            OCH = {
+                add_core = 2420
+                add_core = 1965
+                add_core = 475
+                add_core = 2444
+                add_core = 1966
+            }
+	    release = OCH
+            create_subject = {
+                subject_type = cossack_vassal
+                subject = OCH
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	establish_siberian_host = {
+    		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = siberian_established
+			}
+			culture_group = east_slavic
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			religion_group = christian
+		}
+		allow = {
+            owns_core_province = 461
+            owns_core_province = 2368
+            owns_core_province = 459
+            owns_core_province = 2126
+            owns_core_province = 2125
+			is_at_war = no
+		}
+		effect = {
+            set_country_flag = siberian_established
+            SCH = {
+                add_core = 461
+                add_core = 2368
+                add_core = 459
+                add_core = 2126
+                add_core = 2125
+            }
+	    release = SCH
+            create_subject = {
+                subject_type = cossack_vassal
+                subject = SCH
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	establish_semirechye_host = {
+    		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = semirechye_established
+			}
+			culture_group = east_slavic
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			religion_group = christian
+		}
+		allow = {
+            owns_core_province = 4690
+            owns_core_province = 4689
+            owns_core_province = 1071
+            owns_core_province = 1075
+            owns_core_province = 1076
+			is_at_war = no
+		}
+		effect = {
+            set_country_flag = semirechye_established
+            SEM = {
+                add_core = 4690
+                add_core = 4689
+                add_core = 1071
+                add_core = 1075
+                add_core = 1076
+            }
+	    release = SEM
+            create_subject = {
+                subject_type = cossack_vassal
+                subject = SEM
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
-}
+
